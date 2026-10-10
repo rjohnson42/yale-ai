@@ -1,0 +1,62 @@
+{
+  "300 George Street, Suite 420, New Haven, CT 06511": {
+    "lat": 41.3051413,
+    "lon": -72.9310932,
+    "display_name": "Citizens Bank, 300, George Street, Downtown, Dixwell, New Haven, Connecticut, 06511, United States",
+    "query": "300 George Street, New Haven, CT 06511"
+  },
+  "1156 Whitney Avenue, Suite 1, Hamden, CT 06517": {
+    "lat": 41.3433963,
+    "lon": -72.9122821,
+    "display_name": "1156, Whitney Avenue, Whitneyville, Hamden, South Central Connecticut Planning Region, Connecticut, 06517, United States",
+    "query": "1156 Whitney Avenue, Hamden, CT 06517"
+  },
+  "100 Long Wharf Drive, Building B, Suite 12, New Haven, CT 06511": {
+    "lat": 41.2879951,
+    "lon": -72.9268534,
+    "display_name": "100, Long Wharf Drive, City Point, New Haven, South Central Connecticut Planning Region, Connecticut, 06511, United States",
+    "query": "100 Long Wharf Drive, New Haven, CT 06511"
+  },
+  "59 Elm Street, Suite 300, New Haven, CT 06510": {
+    "lat": 41.3078602,
+    "lon": -72.922974,
+    "display_name": "59, Elm Street, Downtown, Dixwell, New Haven, Connecticut, 06510, United States",
+    "query": "59 Elm Street, New Haven, CT 06510"
+  },
+  "960 Whalley Avenue, Suite 2B, New Haven, CT 06515": {
+    "lat": 41.3283642,
+    "lon": -72.9624414,
+    "display_name": "960, Whalley Avenue, Westville, New Haven, South Central Connecticut Planning Region, Connecticut, 06515, United States",
+    "query": "960 Whalley Avenue, New Haven, CT 06515"
+  },
+  "25 Science Park, Suite 410, New Haven, CT 06511": {
+    "lat": 41.3239343,
+    "lon": -72.9275854,
+    "display_name": "5 Science Park, Winchester Avenue, New Haven, Connecticut, 06511, United States",
+    "query": "Science Park, New Haven, CT"
+  },
+  "910 Chapel Street, Suite A, New Haven, CT 06510": {
+    "lat": 41.3062422,
+    "lon": -72.9264554,
+    "display_name": "910, Chapel Street, Downtown, Dixwell, New Haven, South Central Connecticut Planning Region, Connecticut, 06510, United States",
+    "query": "910 Chapel Street, New Haven, CT 06510"
+  },
+  "350 Woodmont Road, Suite 7, Milford, CT 06460": {
+    "lat": 41.2370124,
+    "lon": -73.0156576,
+    "display_name": "350, Woodmont Road, Milford, South Central Connecticut Planning Region, Connecticut, 06460, United States",
+    "query": "350 Woodmont Road, Milford, CT 06460"
+  },
+  "195 State Street, Suite 2, New Haven, CT 06510": {
+    "lat": 41.302893,
+    "lon": -72.9240682,
+    "display_name": "195, State Street, Dixwell, New Haven, South Central Connecticut Planning Region, Connecticut, 06510, United States",
+    "query": "195 State Street, New Haven, CT 06510"
+  },
+  "48 Montowese Street, Suite 210, Branford, CT 06405": {
+    "lat": 41.2769902,
+    "lon": -72.8060887,
+    "display_name": "48, Montowese Street, Indian Neck, Branford, South Central Connecticut Planning Region, Connecticut, 06405, United States",
+    "query": "48 Montowese Street, Branford, CT 06405"
+  }
+}

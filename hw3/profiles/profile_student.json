@@ -1,0 +1,29 @@
+{
+  "name": "Yale College undergraduate",
+  "segment": "student",
+  "summary": "A typical Yale College undergrad, about 18 to 22, living in one of the fourteen residential colleges. They wear Yale gear as everyday clothes, not as a souvenir. Their college, their friends, and campus rituals matter more than a generic tourist Yale.",
+  "relationship_to_yale": "Enrolled in Yale College. Lives on campus in a residential college. Yale is their daily life, not a place they visit.",
+  "who_they_buy_for": ["self", "friends as small gifts"],
+  "occasions": ["everyday wear", "game day", "Harvard weekend", "college events", "move-in"],
+  "preferred_collections": ["college", "campus", "sport"],
+  "preferred_themes": [
+    "their own residential college",
+    "Boola Boola",
+    "Big Yale",
+    "Yale vs Harvard",
+    "a sport they play or follow"
+  ],
+  "avoid_themes": [
+    "Mom",
+    "Dad",
+    "Grandma",
+    "Grandpa",
+    "Aunt",
+    "Uncle",
+    "professional-school crests such as Law or Management"
+  ],
+  "preferred_garments": ["hoodie", "crewneck", "t-shirt"],
+  "price_sensitivity": "high",
+  "tone_that_resonates": ["casual", "in-group", "campus life", "a little playful"],
+  "tone_that_misses": ["sentimental parent pride", "luxury sales pitch", "tourist souvenir"]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "transaction_id": "rei_business_jacket",
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 156.0,
+    "evidence_for": [
+      "- email_owner_voice_memo.txt",
+      "- credit_card_jan2026.pdf",
+      "- credit_card_transactions.json"
+    ],
+    "confidence": "low"
+  },
+  {
+    "transaction_id": "mixed_square_deposit_roommate",
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 465.0,
+    "evidence_for": [
+      "- email_owner_voice_memo.txt",
+      "- bank_statement_jan2026.pdf",
+      "- bank_transactions.json"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "transaction_id": "mike_smith_unpaid_iou",
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "evidence_for": [
+      "- iou_mike_smith.pdf",
+      "- email_owner_voice_memo.txt",
+      "- bank_statement_jan2026.pdf"
+    ],
+    "confidence": "medium"
+  }
+]

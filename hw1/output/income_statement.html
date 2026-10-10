@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spoke &amp; Wrench - January 2026 Income Statement</title>
+  <style>
+    :root {
+      --yale-blue: #00356B;
+      --yale-med: #286DC0;
+      --yale-light: #5F92C3;
+      --ink: #1B2430;
+      --muted: #5B6770;
+      --paper: #EEF2F6;
+      --card: #FFFFFF;
+      --line: #D7DEE7;
+      --low: #8F2D2D;
+      --medium: #8A5A00;
+      --high: #0F5C38;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Mulish", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    header {
+      background: var(--yale-blue);
+      color: #fff;
+      padding: 28px 8vw 24px;
+    }
+    header p {
+      margin: 0 0 6px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--yale-light);
+    }
+    h1, h2, h3 { margin: 0; }
+    h1 { font-size: 32px; font-weight: 700; }
+    main {
+      padding: 28px 8vw 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: -36px 0 28px;
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--yale-med);
+      border-radius: 8px;
+      padding: 16px 18px;
+      box-shadow: 0 8px 20px rgba(0, 53, 107, 0.08);
+    }
+    .kpi span { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .kpi strong { display: block; margin-top: 8px; font-size: 26px; color: var(--yale-blue); }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px 8px;
+      margin-bottom: 22px;
+    }
+    h2 {
+      color: var(--yale-blue);
+      font-size: 20px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--yale-light);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    th {
+      text-align: left;
+      color: var(--yale-blue);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+      padding: 8px 8px 8px 0;
+    }
+    td {
+      padding: 8px 8px 8px 0;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .calls {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .call {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #f7fafc;
+    }
+    .call-top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+    .call h3 { font-size: 15px; color: var(--yale-blue); }
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--yale-med);
+      white-space: nowrap;
+    }
+    .badge.low { background: var(--low); }
+    .badge.medium { background: var(--medium); }
+    .badge.high { background: var(--high); }
+    dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0; }
+    dt { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    dd { margin: 0; font-weight: 600; }
+    .resolution { font-size: 13px; line-height: 1.45; }
+    .label { margin: 10px 0 4px; font-size: 12px; text-transform: uppercase; color: var(--muted); }
+    ul { margin: 0 0 8px; padding-left: 18px; font-size: 13px; }
+    @media (max-width: 900px) {
+      .kpis, .calls { grid-template-columns: 1fr; }
+      main, header { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Spoke &amp; Wrench Bicycle Repair</p>
+    <h1>January 2026 Income Statement</h1>
+  </header>
+  <main>
+    <div class="kpis">
+      <div class="kpi"><span>Revenue</span><strong>$8,150.00</strong></div>
+      <div class="kpi"><span>Total expenses</span><strong>$4,141.22</strong></div>
+      <div class="kpi"><span>Net income</span><strong>$4,008.78</strong></div>
+    </div>
+
+    <section>
+      <h2>January Income Statement</h2>
+      <table>
+        <thead>
+          <tr><th>Expense</th><th>Category</th><th class="num">Amount</th><th>Sources</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CHECK #1042 - Crown Street Properties (rent)</td><td>rent</td><td class='num'>$1,800.00</td><td class='muted'>lease_jan2026.pdf, bank_transactions.json</td></tr>
+<tr><td>PARK TOOL CO</td><td>tools_equipment</td><td class='num'>$127.40</td><td class='muted'>receipt_park_tool.pdf, credit_card_transactions.json, email_owner_voice_memo.txt</td></tr>
+<tr><td>SPEEDY COURIER NH</td><td>shipping</td><td class='num'>$28.00</td><td class='muted'>receipt_courier.pdf, credit_card_transactions.json</td></tr>
+<tr><td>HOME DEPOT #4602</td><td>tools_equipment</td><td class='num'>$67.12</td><td class='muted'>receipt_home_depot.pdf, credit_card_transactions.json</td></tr>
+<tr><td>NEW HAVEN BIKE PARTS</td><td>cogs_parts</td><td class='num'>$218.40</td><td class='muted'>receipt_nhbp_parts.pdf, credit_card_transactions.json</td></tr>
+<tr><td>CHECK #1043 - New Haven Bike Parts wholesale</td><td>cogs_parts</td><td class='num'>$742.18</td><td class='muted'>receipt_nhbp_parts.pdf, bank_transactions.json, email_owner_voice_memo.txt</td></tr>
+<tr><td>REI #142 NEW HAVEN</td><td>other</td><td class='num'>$156.00</td><td class='muted'>credit_card_transactions.json, email_owner_voice_memo.txt</td></tr>
+<tr><td>ONLINE PMT - Eversource electric</td><td>utilities</td><td class='num'>$186.42</td><td class='muted'>bank_transactions.json</td></tr>
+<tr><td>DEBIT CARD - Comcast business internet</td><td>internet</td><td class='num'>$89.99</td><td class='muted'>bank_transactions.json</td></tr>
+<tr><td>DEBIT CARD - State Farm business liability premium</td><td>insurance</td><td class='num'>$214.00</td><td class='muted'>bank_transactions.json</td></tr>
+<tr><td>MONTHLY SERVICE FEE</td><td>bank_fees</td><td class='num'>$15.00</td><td class='muted'>bank_transactions.json</td></tr>
+<tr><td>DEBIT CARD - Park Tool vendor portal</td><td>tools_equipment</td><td class='num'>$344.55</td><td class='muted'>bank_transactions.json</td></tr>
+<tr><td>STAPLES 03418 NH</td><td>office_supplies</td><td class='num'>$43.17</td><td class='muted'>credit_card_transactions.json</td></tr>
+<tr><td>YALE PRINTING SVCS</td><td>marketing</td><td class='num'>$89.00</td><td class='muted'>credit_card_transactions.json</td></tr>
+<tr><td>AMAZON WEB SERVICES</td><td>software_cloud</td><td class='num'>$19.99</td><td class='muted'>credit_card_transactions.json</td></tr>
+          <tr>
+            <td colspan="2"><strong>Total expenses</strong></td>
+            <td class="num"><strong>$4,141.22</strong></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Net income</strong></td>
+            <td class="num"><strong>$4,008.78</strong></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Excluded - personal</h2>
+      <table>
+        <thead>
+          <tr><th>Item</th><th class="num">Amount seen</th><th>Sources</th><th>Why excluded</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>owner_draw_savings_transfer</td><td class='num'>$900.00</td><td>bank_transactions.json</td><td>The January 10 transfer to savings is explicitly labeled a personal owner draw, not a business expense.</td></tr>
+<tr><td>owner_draw_atm_cash</td><td class='num'>$200.00</td><td>bank_transactions.json</td><td>The January 22 ATM withdrawal is identified as Jordan Lee personal cash and is excluded from business expenses.</td></tr>
+<tr><td>amazon_headphones_personal</td><td class='num'>$89.99</td><td>receipt_amazon_headphones.pdf, credit_card_transactions.json, email_owner_voice_memo.txt</td><td>The receipt and card charge match at $89.99. The owner confirms these are personal commute headphones, so exclude the charge from January business expenses.</td></tr>
+<tr><td>ebay_repair_stand_personal</td><td class='num'>$425.00</td><td>ebay_repair_stand.pdf, credit_card_transactions.json, email_owner_voice_memo.txt</td><td>The eBay confirmation and card charge match at $425. The owner voice memo identifies the used Park Tool stand purchase as personal, overriding the receipt&#x27;s equipment-oriented description.</td></tr>
+<tr><td>instacart_household_groceries</td><td class='num'>$64.22</td><td>credit_card_transactions.json</td><td>The $64.22 Instacart/Whole Foods charge is a household grocery purchase and is excluded from the January business P&amp;L.</td></tr>
+<tr><td>netflix_personal_subscription</td><td class='num'>$15.49</td><td>credit_card_transactions.json</td><td>The $15.49 Netflix charge is personal and is excluded from business expenses.</td></tr>
+<tr><td>shell_personal_fuel</td><td class='num'>$52.10</td><td>credit_card_transactions.json</td><td>The $52.10 Shell charge is classified as personal fuel and is excluded from the January business P&amp;L.</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Excluded - business</h2>
+      <table>
+        <thead>
+          <tr><th>Item</th><th class="num">Amount seen</th><th>Sources</th><th>Why excluded</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>hartford_mutual_quote_vs_approval</td><td class='num'>$6,800.00</td><td>quote_hartford_mutual_fleet.pdf, email_fleet_wellness.txt</td><td>The signed quote totals $6,593.70 including tax, while the email says the customer approved a rounded $6,800 budget. The work is scheduled for March and the email confirms no January revenue, so exclude both amounts from January.</td></tr>
+<tr><td>mike_smith_unpaid_iou</td><td class='num'>$180.00</td><td>iou_mike_smith.pdf, email_owner_voice_memo.txt</td><td>The $180 tune-up and brake-pad amount is an unpaid IOU. The owner confirms it has not reached the bank, so it is not January cash revenue.</td></tr>
+<tr><td>hartford_mutual_future_work</td><td class='num'>$6,800.00</td><td>email_fleet_wellness.txt</td><td>The Hartford Mutual fleet work is targeted for March 9-20, with payment expected in February. The approved $6,800 is future work and not January revenue.</td></tr>
+<tr><td>wedding_ebike_future_quote</td><td class='num'>$5,600.00</td><td>email_wedding_ebikes.txt</td><td>The $5,600 wedding e-bike estimate concerns a June event, has no deposit, and remains subject to a February decision. Exclude it from January revenue.</td></tr>
+<tr><td>yale_cycling_club_future_work</td><td class='num'>$2,400.00</td><td>email_yale_cycling_club.txt</td><td>The $2,400 Yale Cycling Club estimate is for February work and no deposit was received in January. The possible $150 rush surcharge is not yet committed, so neither amount is January revenue.</td></tr>
+<tr><td>cam_not_yet_invoiced</td><td class='num'>$125.00</td><td>lease_jan2026.pdf</td><td>Estimated January CAM is approximately $125, but the lease states it was not yet invoiced and will appear on a later statement. Do not accrue it as a January cash expense.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Judgment calls</h2>
+      <div class="calls">
+        <article class='call'><div class='call-top'><h3>rei_business_jacket</h3><span class='badge low'>low</span></div><dl><dt>Included</dt><dd>yes</dd><dt>Amount booked</dt><dd>$156.00</dd></dl><p class='resolution'></p><p class='label'>Evidence</p><ul><li>email_owner_voice_memo.txt</li><li>credit_card_jan2026.pdf</li><li>credit_card_transactions.json</li></ul></article>
+<article class='call'><div class='call-top'><h3>mixed_square_deposit_roommate</h3><span class='badge medium'>medium</span></div><dl><dt>Included</dt><dd>yes</dd><dt>Amount booked</dt><dd>$465.00</dd></dl><p class='resolution'>The $560 January 15 Square deposit includes a $95 roommate tune-up that was personal. Record only the remaining $465 as shop revenue; treat $95 as a personal pass-through or owner-related item.</p><p class='label'>Evidence</p><ul><li>email_owner_voice_memo.txt</li><li>bank_statement_jan2026.pdf</li><li>bank_transactions.json</li></ul></article>
+<article class='call'><div class='call-top'><h3>mike_smith_unpaid_iou</h3><span class='badge medium'>medium</span></div><dl><dt>Included</dt><dd>no</dd><dt>Amount booked</dt><dd>$0.00</dd></dl><p class='resolution'>The $180 tune-up and brake-pad amount is an unpaid IOU. The owner confirms it has not reached the bank, so it is not January cash revenue.</p><p class='label'>Evidence</p><ul><li>iou_mike_smith.pdf</li><li>email_owner_voice_memo.txt</li><li>bank_statement_jan2026.pdf</li></ul></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

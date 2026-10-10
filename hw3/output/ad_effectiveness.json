@@ -1,0 +1,152 @@
+[
+  {
+    "video_path": "data/videos/ad_humble.mp4",
+    "profile_path": "profiles/profile_student.json",
+    "customer_summary": "Yale College undergraduate",
+    "effective": true,
+    "score": 0.78,
+    "would_visit": true,
+    "reason": "The ad visibly centers on a group of young people wearing casual Yale-branded hoodies and shirts in an informal, in-group setting. That closely matches a Yale undergraduate's everyday campus identity and preferred casual garments, especially the prominent Big Yale-style hoodie. However, it does not show a residential college, sport, campus ritual, product range, price, or an explicit Campus Customs shopping prompt.",
+    "strengths": [
+      "Strong Yale identity and recognizable Big Yale lettering",
+      "Casual hoodies and T-shirts fit the customer's preferred everyday wear",
+      "Young group setting conveys peer/in-group campus life",
+      "Playful, non-tourist tone rather than sentimental family messaging"
+    ],
+    "mismatches": [
+      "Generic Yale branding rather than a specific residential college or student theme",
+      "No visible pricing or affordability cue despite high price sensitivity",
+      "No clear product selection, store location, or call to visit Campus Customs",
+      "The dramatic underpass setting is less directly connected to ordinary campus life, game day, or college events"
+    ],
+    "catalogue_matches": [
+      {
+        "product_id": "timothy-dwight-college-crewneck",
+        "name": "Timothy Dwight College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Timothy Dwight College",
+        "primary_color": "light gray",
+        "similarity": 0.5444
+      },
+      {
+        "product_id": "basic-hoodie-big-yale",
+        "name": "Basic Hoodie Big Yale",
+        "garment_type": "hoodie",
+        "theme": "Big Yale",
+        "primary_color": "navy",
+        "similarity": 0.5258
+      },
+      {
+        "product_id": "jonathan-edwards-college-crewneck",
+        "name": "Jonathan Edwards College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Jonathan Edwards College",
+        "primary_color": "light gray",
+        "similarity": 0.5234
+      },
+      {
+        "product_id": "hype-and-vice-yale-university-offside-crewneck",
+        "name": "Hype And Vice Yale University Offside Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Offside",
+        "primary_color": "navy",
+        "similarity": 0.5221
+      },
+      {
+        "product_id": "pierson-college-crewneck",
+        "name": "Pierson College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Pierson College",
+        "primary_color": "navy",
+        "similarity": 0.5217
+      }
+    ],
+    "frame_timestamps_sec": [
+      0.0,
+      1.29,
+      2.57,
+      3.86,
+      5.14,
+      6.43,
+      7.71,
+      9.0
+    ],
+    "frames_sent": 8,
+    "vision_model": "gpt-5.6-luna"
+  },
+  {
+    "video_path": "data/videos/ad_humble.mp4",
+    "profile_path": "profiles/profile_parent.json",
+    "customer_summary": "Parent of a Yale College student",
+    "effective": true,
+    "score": 0.62,
+    "would_visit": true,
+    "reason": "The ad visibly features a Yale-branded hoodie and a group wearing Yale apparel, providing clear university pride that is relevant to a parent shopping for themselves or their student. However, the gritty underpass setting, serious performance-oriented presentation, and lack of family, gift, or visitor messaging make it feel more student-centric than warm and welcoming to parents.",
+    "strengths": [
+      "Clear, prominent Yale branding on multiple hoodies and shirts",
+      "Shows a range of Yale apparel, including a hoodie that matches a preferred garment",
+      "Communicates group affiliation and school pride",
+      "Could prompt a parent to look for general Yale-branded apparel during a visit"
+    ],
+    "mismatches": [
+      "No Mom/Dad, family pride, graduation, holiday, or visitor-oriented cues",
+      "Urban, gritty setting and intense pose feel less warm or welcoming",
+      "Appears aimed at current students or a youth/streetwear audience rather than parents",
+      "No visible product variety, gift framing, store information, or shopping call to action"
+    ],
+    "catalogue_matches": [
+      {
+        "product_id": "timothy-dwight-college-crewneck",
+        "name": "Timothy Dwight College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Timothy Dwight College",
+        "primary_color": "light gray",
+        "similarity": 0.5444
+      },
+      {
+        "product_id": "basic-hoodie-big-yale",
+        "name": "Basic Hoodie Big Yale",
+        "garment_type": "hoodie",
+        "theme": "Big Yale",
+        "primary_color": "navy",
+        "similarity": 0.5258
+      },
+      {
+        "product_id": "jonathan-edwards-college-crewneck",
+        "name": "Jonathan Edwards College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Jonathan Edwards College",
+        "primary_color": "light gray",
+        "similarity": 0.5234
+      },
+      {
+        "product_id": "hype-and-vice-yale-university-offside-crewneck",
+        "name": "Hype And Vice Yale University Offside Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Offside",
+        "primary_color": "navy",
+        "similarity": 0.5221
+      },
+      {
+        "product_id": "pierson-college-crewneck",
+        "name": "Pierson College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Pierson College",
+        "primary_color": "navy",
+        "similarity": 0.5217
+      }
+    ],
+    "frame_timestamps_sec": [
+      0.0,
+      1.29,
+      2.57,
+      3.86,
+      5.14,
+      6.43,
+      7.71,
+      9.0
+    ],
+    "frames_sent": 8,
+    "vision_model": "gpt-5.6-luna"
+  }
+]

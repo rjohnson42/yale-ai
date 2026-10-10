@@ -1,0 +1,6 @@
+.env
+.venv/
+.venv.nosync/
+__pycache__/
+*.pyc
+output/

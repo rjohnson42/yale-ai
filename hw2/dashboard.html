@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sierra sales workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f7f2;
+      --surface: #ffffff;
+      --text: #14261a;
+      --muted: #5a6b60;
+      --green: #1f6b43;
+      --green-2: #2f8f58;
+      --mint: #e6f5eb;
+      --peach: #ffe8cc;
+      --sky: #d9eefc;
+      --border: #cfe0d4;
+      --warn: #b86a00;
+      --radius: 18px;
+      --shadow: 0 18px 40px rgba(20, 70, 40, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--text);
+      line-height: 1.55;
+      background:
+        radial-gradient(900px 520px at -8% -20%, #b7f0c8 0%, transparent 58%),
+        radial-gradient(720px 420px at 108% 0%, #ffd9a8 0%, transparent 52%),
+        radial-gradient(640px 380px at 80% 110%, #c5e8ff 0%, transparent 50%),
+        linear-gradient(180deg, #f7fbf6 0%, #eef6f0 40%, #f7f4ee 100%);
+      min-height: 100vh;
+    }
+    a { color: var(--green); }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 80px; }
+    header.hero {
+      padding: 12px 0 8px;
+    }
+    .brand {
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      align-items: center;
+      padding: 10px 4px 18px;
+    }
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 14px; font-weight: 500;
+    }
+    nav a:hover { color: var(--green); }
+    .hero-panel {
+      background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(230,245,235,0.9) 55%, rgba(255,232,204,0.55));
+      border: 1px solid rgba(31, 107, 67, 0.12);
+      border-radius: 28px;
+      padding: 36px 36px 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      width: 220px; height: 220px;
+      right: -40px; top: -50px;
+      background: radial-gradient(circle, #7be39a 0%, transparent 70%);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+      margin: 0 0 14px;
+      max-width: 12em;
+      color: var(--green);
+      position: relative;
+    }
+    .lede { color: var(--muted); max-width: 62ch; font-size: 1.05rem; position: relative; }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 26px 0 0;
+      position: relative;
+    }
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      box-shadow: 0 8px 20px rgba(31, 107, 67, 0.05);
+    }
+    .kpi .n { font-size: 1.8rem; font-weight: 700; color: var(--green); }
+    .kpi .l { color: var(--muted); font-size: 13px; }
+    section { margin-top: 56px; }
+    h2 {
+      font-size: 1.75rem; letter-spacing: -0.03em; margin: 0 0 8px; color: var(--text);
+    }
+    .section-lede { color: var(--muted); margin: 0 0 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 10px 28px rgba(20, 70, 40, 0.05);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px rgba(31, 107, 67, 0.12);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .card h4 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green); }
+    .kicker {
+      text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px; color: var(--green-2); margin: 0 0 8px; font-weight: 600;
+    }
+    .muted { color: var(--muted); }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; align-items: center; }
+    .chip-label { font-size: 12px; color: var(--muted); margin-right: 4px; }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--border);
+      background: var(--mint);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      text-decoration: none;
+      color: var(--green);
+      font-weight: 500;
+    }
+    .chip.warn { background: var(--peach); border-color: #f0c48a; color: var(--warn); }
+    .text-link { color: var(--green); font-weight: 600; }
+    @media (max-width: 800px) {
+      nav a { margin-left: 0; margin-right: 14px; }
+      .hero-panel { padding: 24px 20px; }
+    }
+    ul.plain { padding-left: 18px; }
+    ul.plain li { margin: 8px 0; }
+    .letter {
+      margin-top: 16px;
+      padding: 18px;
+      background: linear-gradient(180deg, #fffdf8, #f6f1e8);
+      color: #14261a;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+    .meta { margin: 6px 0; color: var(--muted); }
+    .meta span {
+      display: inline-block; min-width: 64px; color: var(--green); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;
+    }
+    footer {
+      margin-top: 64px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="brand">
+        <a class="logo" href="https://sierra.ai"><img src="assets/sierra-logo.png" alt="Sierra"></a>
+        <nav>
+          <a href="#seller">Seller</a>
+          <a href="#targets">Targets</a>
+          <a href="#emails">Drafts</a>
+        </nav>
+      </div>
+      <div class="hero-panel">
+      <h1>Sierra AI Sales Platform</h1>
+      <p class="lede">Sierra helps businesses build better, more human customer experiences with AI; it describes itself as a conversational AI platform for businesses.</p>
+      <p class="lede"><a href="https://sierra.ai">https://sierra.ai</a> · Outcome-based conversational AI</p>
+      <div class="kpis">
+        <div class="kpi"><div class="n">3</div><div class="l">Target accounts</div></div>
+        <div class="kpi"><div class="n">3</div><div class="l">Outreach drafts loaded</div></div>
+        <div class="kpi"><div class="n">1/3</div><div class="l">Public emails found</div></div>
+        <div class="kpi"><div class="n">3</div><div class="l">Marked unsent</div></div>
+      </div>
+      </div>
+    </header>
+
+    <section id="seller">
+      <h2>Who the seller is</h2>
+      <p class="section-lede">B2B enterprise software/platform. Sierra sells conversational AI agents and related agent-building, orchestration, analytics, and governance capabilities to businesses. The site states that its pricing is outcome-based: customers pay for value/results delivered rather than tokens.</p>
+      <div class="chip-row"><span class="chip ">Financial services</span><span class="chip ">Healthcare</span><span class="chip ">Telecommunications</span><span class="chip ">Media</span><span class="chip ">Travel and hospitality</span><span class="chip ">Retail and consumer goods</span><span class="chip ">Technology</span><span class="chip ">Commercial real estate</span></div>
+      <div class="grid" style="margin-top:18px"><article class='card product'><h3>Sierra conversational AI platform</h3><p>A platform for businesses to deploy AI agents that handle customer experiences and pursue business outcomes.</p><p class='muted'>Unifies customer interactions and outcomes across channels, with built-in trust, security, compliance, and guardrails.</p></article><article class='card product'><h3>Ghostwriter</h3><p>An agent-building agent that creates and optimizes production-ready customer-experience agents from prompts, SOPs, transcripts, audio interviews, or other business materials.</p><p class='muted'>Lets customer-experience teams build, test, review, and continuously improve multilingual, multichannel agents without clicks, code, or complex manual debugging.</p></article><article class='card product'><h3>Agent Studio</h3><p>A no-code environment for building and managing agents, configuring customer journeys and knowledge, defining brand guidelines, and running simulations.</p><p class='muted'>Empowers customer-experience teams to manage agents without writing code.</p></article><article class='card product'><h3>Horizon</h3><p>Long-horizon agents that act on signals, retain customer context, plan next steps, and orchestrate inbound and outbound interactions over days, weeks, or months.</p><p class='muted'>Drives high-value outcomes through proactive, omnichannel engagement, persistent memory, next-best-action decisioning, and playbooks.</p></article><article class='card product'><h3>Insights</h3><p>Analytics, experimentation, monitoring, auditing, and observability for evaluating and optimizing agent performance.</p><p class='muted'>Helps businesses track metrics such as CSAT and resolution, investigate trends, identify conversations needing attention, run experiments, and understand agent actions.</p></article><article class='card product'><h3>Explorer</h3><p>Natural-language analytics and conversation research that answers questions about customer conversations and recommends improvements.</p><p class='muted'>Provides ChatGPT-style analysis and actionable recommendations from agent and customer-interaction data.</p></article><article class='card product'><h3>Multichannel agent deployment</h3><p>A single agent can operate across chat, SMS, WhatsApp, email, voice, and ChatGPT.</p><p class='muted'>Unifies channels and preserves context as customers switch between them.</p></article><article class='card product'><h3>Context Engine</h3><p>Customer-context and memory capabilities used to connect conversations, systems, and touchpoints.</p><p class='muted'>Enables personalized decisions and continuity across customer journeys.</p></article></div>
+      <div class="grid" style="margin-top:14px">
+        <article class="card">
+          <h3>Channels the platform covers</h3>
+          <div class="chip-row"><span class="chip ">Chat</span><span class="chip ">SMS</span><span class="chip ">WhatsApp</span><span class="chip ">Email</span><span class="chip ">Voice/phone</span><span class="chip ">ChatGPT</span><span class="chip ">Provider messaging/workflow integrations</span></div>
+          <h4>Offices</h4>
+          <div class="chip-row"><span class="chip ">New York</span><span class="chip ">Atlanta</span><span class="chip ">London</span><span class="chip ">Singapore</span><span class="chip ">Tokyo</span><span class="chip ">Paris</span><span class="chip ">Madrid</span><span class="chip ">Toronto</span><span class="chip ">San Francisco</span></div>
+        </article>
+        <article class="card">
+          <h3>Who they sell to</h3>
+          <div class="chip-row"><span class="chip ">Large and leading consumer-facing businesses</span><span class="chip ">Customer experience and customer support organizations</span><span class="chip ">Contact centers and support teams</span><span class="chip ">Financial-services companies</span><span class="chip ">Healthcare providers and healthcare organizations</span><span class="chip ">Telecommunications companies</span><span class="chip ">Media and subscription businesses</span><span class="chip ">Travel and hospitality companies</span><span class="chip ">Retail and consumer-goods companies</span><span class="chip ">Technology companies</span><span class="chip ">Commercial real-estate businesses</span></div>
+          <h4>Founders named on-site</h4>
+          <ul class="plain"><li><strong>Bret Taylor</strong> <span class='muted'>Co-Founder</span></li><li><strong>Clay Bavor</strong> <span class='muted'>Co-Founder</span></li></ul>
+        </article>
+      </div>
+      <article class="card" style="margin-top:14px">
+        <h3>ICP evidence from the company site</h3>
+        <ul class="plain"><li><strong>Enterprise or scaled consumer-facing organization</strong><p>Sierra says it works with industry leaders and customers with millions of customers; its customer directory includes major brands such as Rocket Mortgage, SiriusXM, Redfin, Ramp, and others.</p></li><li><strong>Meaningful customer-service or customer-experience operation</strong><p>The company explicitly targets customer-experience teams, support teams, contact centers, and customer-service journeys.</p></li><li><strong>Complex, high-value workflows where outcomes matter</strong><p>Horizon describes mortgage, claims, renewal, healthcare referral, scheduling, prior authorization, and other long-horizon playbooks.</p></li><li><strong>Need for omnichannel and multilingual engagement</strong><p>Sierra supports chat, SMS, WhatsApp, email, voice, and ChatGPT; the about page cites 24/7 and any-language customer engagement.</p></li></ul>
+      </article>
+    </section>
+
+    <section id="targets">
+      <h2>Target customers</h2>
+      <p class="section-lede">Three healthcare systems with evidenced patient-access or automation programs. Contact chips are only addresses found on their public sites.</p>
+      <div class="grid"><article class='card target' id='target-1'><p class='kicker'>Target 01</p><h3>HCA Healthcare</h3><p><a class='text-link' href='https://www.hcahealthcare.com'>https://www.hcahealthcare.com</a> <a class="text-link" href="#email-1">Open draft</a></p><div class='chip-row'><span class='chip-label'>Contact</span><span class="chip warn">No public email found</span></div><h4>Why they fit</h4><p>HCA is an exceptionally strong enterprise fit for Sierra: it operates 190 hospitals and approximately 2,500 ambulatory sites, supports 47 million patient encounters annually, and already has an Automation Center of Excellence plus patient-experience and workflow-transformation programs. Sierra could complement—not replace—HCA&#x27;s internal automation by orchestrating complex patient-access, scheduling, registration, billing, and follow-up journeys across channels with stronger conversational context, guardrails, auditability, and measurable outcomes.</p><h4>Business context</h4><p>HCA&#x27;s Information Technology Group serves a large, distributed care network and explicitly discusses automation, patient-information automation, call/text analysis, automated emergency-room registration, EHR modernization, and care transformation. This suggests sophisticated technical and operational buyers, as well as complex regulated workflows where Sierra&#x27;s trust and governance positioning matters.</p></article><article class='card target' id='target-2'><p class='kicker'>Target 02</p><h3>Providence</h3><p><a class='text-link' href='https://www.providence.org'>https://www.providence.org</a> <a class="text-link" href="#email-2">Open draft</a></p><div class='chip-row'><span class='chip-label'>Contact</span><span class="chip warn">No public email found</span></div><h4>Why they fit</h4><p>Providence has a direct use case for Sierra because it operates a large, multi-region health system and already uses an AI-powered patient-navigation chatbot, Grace. Sierra may be relevant for expanding beyond app-based navigation into more complex, persistent journeys such as appointment access, financial-assistance qualification, prescription workflows, provider messaging, and coordinated live-agent escalation across voice, chat, SMS, and email.</p><h4>Business context</h4><p>Providence publicly describes Grace helping patients schedule appointments, find results, navigate records, pay bills, assess financial-assistance eligibility, and choose care based on symptoms. The Digital Innovation Group worked with engineers, product leaders, caregivers, operations, patient engagement, and patients—clear evidence of an active innovation organization and a cross-functional buyer group.</p></article><article class='card target' id='target-3'><p class='kicker'>Target 03</p><h3>NYU Langone Health</h3><p><a class='text-link' href='https://nyulangone.org'>https://nyulangone.org</a> <a class="text-link" href="#email-3">Open draft</a></p><div class='chip-row'><span class='chip-label'>Contact</span><a class="chip" href="mailto:news@nyulangone.org">news@nyulangone.org</a></div><h4>Why they fit</h4><p>NYU Langone is a strong fit because it already exposes an AI assistant and serves patients across a broad specialty, hospital, urgent-care, virtual-care, and geographic footprint. That existing AI maturity can make it a credible design partner for Sierra&#x27;s next layer: production agent governance, simulation, observability, cross-channel continuity, and outcome-oriented patient-access journeys.</p><h4>Business context</h4><p>NYU&#x27;s public site highlights an AI Assistant, MyChart, patient forms, virtual urgent care, Care on Demand, video visits, many hospitals and locations, and a central contact/access experience. The public contact page lists news@nyulangone.org, which is a media address rather than a verified commercial buyer contact; outreach should be routed to digital health, patient access, or enterprise technology leadership if possible.</p></article></div>
+    </section>
+
+    <section id="emails">
+      <h2>Drafted emails</h2>
+      <p class="section-lede">Full copy is loaded from output/emails.json.</p>
+      <article class='card email' id='email-1'><p class='kicker'>Unsent draft</p><h3>HCA Healthcare</h3><p class='meta'><span>To</span> No public To: address (draft only)</p><p class='meta'><span>Subject</span> Extending HCA’s patient-access automation across complex journeys</p><div class='letter'>Hi HCA Healthcare team,<br>
+<br>
+I was impressed by the scale of HCA’s technology operation: 190 hospitals, approximately 2,500 ambulatory sites, and 47 million patient encounters, alongside an Automation Center of Excellence and work on patient-information automation, call/text analysis, and automated registration.<br>
+<br>
+Sierra helps enterprise healthcare organizations deploy governed conversational agents that can move beyond isolated FAQs—coordinating multi-step patient-access journeys across chat, voice, SMS, email, and existing systems. For HCA, that could mean helping patients schedule or reschedule care, resolve registration and billing questions, complete forms, and receive proactive follow-up while preserving context and routing appropriately to staff.<br>
+<br>
+Would a short conversation with the patient-access, care-transformation, or ITG team be useful? We could discuss one narrowly scoped workflow and the outcome metrics HCA would want to validate.<br>
+<br>
+Best,<br>
+[Your Name]<br>
+Sierra<br>
+https://sierra.ai</div></article><article class='card email' id='email-2'><p class='kicker'>Unsent draft</p><h3>Providence</h3><p class='meta'><span>To</span> No public To: address (draft only)</p><p class='meta'><span>Subject</span> Building on Grace for more complete patient journeys</p><div class='letter'>Hi Providence Digital Innovation Group,<br>
+<br>
+I read your description of Grace in the Providence app and was struck by how much practical work it already supports—appointment scheduling, care navigation, results and records questions, billing, financial-assistance eligibility, symptom guidance, and connections to live financial counselors.<br>
+<br>
+Sierra helps teams extend successful patient-navigation experiences into governed, long-horizon agents that can retain context, take action across business systems, and coordinate proactive and reactive conversations across channels. That could be useful for journeys such as referral-to-appointment, prescription follow-up, financial-assistance completion, or escalation from self-service to the patient engagement center.<br>
+<br>
+Given Providence’s collaboration among digital, engineering, operations, caregivers, and patient-engagement teams, would you be open to comparing notes on where Grace’s next highest-value workflow might be—and how to measure resolution, access, and patient satisfaction?<br>
+<br>
+Best,<br>
+[Your Name]<br>
+Sierra<br>
+https://sierra.ai</div></article><article class='card email' id='email-3'><p class='kicker'>Unsent draft</p><h3>NYU Langone Health</h3><p class='meta'><span>To</span> news@nyulangone.org</p><p class='meta'><span>Subject</span> A governed next layer for NYU Langone’s AI Assistant</p><div class='letter'>Hello NYU Langone team,<br>
+<br>
+I noticed NYU Langone’s public AI Assistant alongside MyChart, virtual urgent care, Care on Demand, video visits, and a broad network of hospitals and specialty services. That combination suggests an advanced digital-access program with many opportunities to connect patients to the right next step.<br>
+<br>
+Sierra helps healthcare organizations build and operate production conversational agents with no-code journey management, automated simulation and edge-case testing, persistent context, system actions, observability, and human-review guardrails. We would be interested in exploring whether Sierra could complement NYU Langone’s existing assistant for a focused workflow such as provider discovery, appointment scheduling, pre-visit preparation, or follow-up across digital and contact-center channels.<br>
+<br>
+Could you point me to the leader responsible for digital health, patient access, or enterprise conversational AI? I’m happy to send a concise workflow proposal rather than a generic product deck.<br>
+<br>
+Best,<br>
+[Your Name]<br>
+Sierra<br>
+https://sierra.ai<br>
+<br>
+P.S. I found this public address on NYU Langone’s contact page; if it is not the right route for a technology partnership, please redirect me to the appropriate team.</div></article>
+    </section>
+
+    <footer>
+      Source files: assets/company_profile.json, output/targets.json, output/emails.json.
+      Link to Sierra: <a href="https://sierra.ai">https://sierra.ai</a>.
+      Profiled 2026-09-15; targets 2026-09-16.
+    </footer>
+  </div>
+</body>
+</html>

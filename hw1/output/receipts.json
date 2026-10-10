@@ -1,0 +1,56 @@
+[
+  {
+    "vendor": "ct_biketools (eBay)",
+    "date": "2026-01-13",
+    "description": "Park Tool PRS-25 Team Race Stand (used)",
+    "amount_usd": 425.0,
+    "category": "tools_equipment",
+    "source_file": "ebay_repair_stand.pdf",
+    "fields_not_found": []
+  },
+  {
+    "vendor": "Amazon.com",
+    "date": "2026-01-04",
+    "description": "Sony WH-CH520 Wireless Headphones \u2014 Black",
+    "amount_usd": 89.99,
+    "category": "personal",
+    "source_file": "receipt_amazon_headphones.pdf",
+    "fields_not_found": []
+  },
+  {
+    "vendor": "Speedy Courier",
+    "date": "2026-01-17",
+    "description": "Same-day courier delivery of emergency tubes",
+    "amount_usd": 28.0,
+    "category": "shipping",
+    "source_file": "receipt_courier.pdf",
+    "fields_not_found": []
+  },
+  {
+    "vendor": "The Home Depot",
+    "date": "2026-01-19",
+    "description": "Rubbermaid 18-gallon bins, push broom, and dust pan",
+    "amount_usd": 67.12,
+    "category": "tools_equipment",
+    "source_file": "receipt_home_depot.pdf",
+    "fields_not_found": []
+  },
+  {
+    "vendor": "NEW HAVEN BIKE PARTS",
+    "date": "2026-01-19",
+    "description": "Continental GP5000 tires, Presta tubes, and Shimano HG chains",
+    "amount_usd": 218.4,
+    "category": "cogs_parts",
+    "source_file": "receipt_nhbp_parts.pdf",
+    "fields_not_found": []
+  },
+  {
+    "vendor": "PARK TOOL COMPANY",
+    "date": "2026-01-06",
+    "description": "Chain whip SR-12.2, cassette lock tool FR-5.2, and blue shop apron",
+    "amount_usd": 88.7,
+    "category": "tools_equipment",
+    "source_file": "receipt_park_tool.pdf",
+    "fields_not_found": []
+  }
+]

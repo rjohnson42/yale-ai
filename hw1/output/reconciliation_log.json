@@ -1,0 +1,286 @@
+[
+  {
+    "id": "jan_rent_lease_vs_bank",
+    "sources": [
+      "lease_jan2026.pdf",
+      "bank_transactions.json"
+    ],
+    "amounts_seen": {
+      "lease_jan2026.pdf": 1800.0,
+      "bank_transactions.json": 1800.0
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 1800.0,
+    "resolution": "The lease identifies January base rent of $1,800, and bank check #1042 confirms it was paid on January 2. Book the rent once."
+  },
+  {
+    "id": "owner_draw_savings_transfer",
+    "sources": [
+      "bank_transactions.json"
+    ],
+    "amounts_seen": {
+      "bank_transactions.json": 900.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The January 10 transfer to savings is explicitly labeled a personal owner draw, not a business expense."
+  },
+  {
+    "id": "owner_draw_atm_cash",
+    "sources": [
+      "bank_transactions.json"
+    ],
+    "amounts_seen": {
+      "bank_transactions.json": 200.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The January 22 ATM withdrawal is identified as Jordan Lee personal cash and is excluded from business expenses."
+  },
+  {
+    "id": "mixed_square_deposit_roommate",
+    "sources": [
+      "bank_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "bank_transactions.json": 560.0,
+      "email_owner_voice_memo.txt": 95.0
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 465.0,
+    "resolution": "The $560 January 15 Square deposit includes a $95 roommate tune-up that was personal. Record only the remaining $465 as shop revenue; treat $95 as a personal pass-through or owner-related item."
+  },
+  {
+    "id": "park_tool_card_vs_partial_receipt",
+    "sources": [
+      "receipt_park_tool.pdf",
+      "credit_card_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "receipt_park_tool.pdf": 88.7,
+      "credit_card_transactions.json": 127.4,
+      "email_owner_voice_memo.txt": 38.7
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 127.4,
+    "resolution": "The $88.70 receipt covers the initial Park Tool items, while the card charge is $127.40 because the back-ordered SR-1 spanner added $38.70. Book the full posted business charge once."
+  },
+  {
+    "id": "amazon_headphones_personal",
+    "sources": [
+      "receipt_amazon_headphones.pdf",
+      "credit_card_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "receipt_amazon_headphones.pdf": 89.99,
+      "credit_card_transactions.json": 89.99,
+      "email_owner_voice_memo.txt": 89.99
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The receipt and card charge match at $89.99. The owner confirms these are personal commute headphones, so exclude the charge from January business expenses."
+  },
+  {
+    "id": "ebay_repair_stand_personal",
+    "sources": [
+      "ebay_repair_stand.pdf",
+      "credit_card_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "ebay_repair_stand.pdf": 425.0,
+      "credit_card_transactions.json": 425.0,
+      "email_owner_voice_memo.txt": 425.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The eBay confirmation and card charge match at $425. The owner voice memo identifies the used Park Tool stand purchase as personal, overriding the receipt's equipment-oriented description."
+  },
+  {
+    "id": "speedy_courier_receipt_vs_card",
+    "sources": [
+      "receipt_courier.pdf",
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "receipt_courier.pdf": 28.0,
+      "credit_card_transactions.json": 28.0
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 28.0,
+    "resolution": "The courier receipt for emergency tubes matches the January 17 card charge exactly. Count the $28 shipping expense once."
+  },
+  {
+    "id": "home_depot_receipt_vs_card",
+    "sources": [
+      "receipt_home_depot.pdf",
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "receipt_home_depot.pdf": 67.12,
+      "credit_card_transactions.json": 67.12
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 67.12,
+    "resolution": "The receipt and card charge match at $67.12. The owner confirms the bins, broom, and dust pan were for the shop, so book the full amount as a business expense once."
+  },
+  {
+    "id": "nhbp_counter_invoice_receipt_vs_card",
+    "sources": [
+      "receipt_nhbp_parts.pdf",
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "receipt_nhbp_parts.pdf": 218.4,
+      "credit_card_transactions.json": 218.4
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 218.4,
+    "resolution": "The January 19 counter invoice and January 25 card posting both show $218.40. Book this separate parts purchase once as COGS."
+  },
+  {
+    "id": "nhbp_wholesale_check_vs_invoice_note",
+    "sources": [
+      "receipt_nhbp_parts.pdf",
+      "bank_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "receipt_nhbp_parts.pdf": 742.18,
+      "bank_transactions.json": 742.18,
+      "email_owner_voice_memo.txt": 742.18
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 742.18,
+    "resolution": "The receipt document identifies a separate $742.18 wholesale restock invoice paid by check #1043 on January 18. It must remain separate from the $218.40 counter invoice and is booked once as COGS."
+  },
+  {
+    "id": "rei_business_high_vis_jacket",
+    "sources": [
+      "credit_card_transactions.json",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "credit_card_transactions.json": 156.0,
+      "email_owner_voice_memo.txt": 156.0
+    },
+    "included_in_income_statement": "yes",
+    "amount_used_in_income_statment": 156.0,
+    "resolution": "Although the card classification is personal and the merchant is sporting goods, the owner confirms the $156 jacket was required high-visibility outerwear for on-site business work. Book it as a business expense."
+  },
+  {
+    "id": "instacart_household_groceries",
+    "sources": [
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "credit_card_transactions.json": 64.22
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $64.22 Instacart/Whole Foods charge is a household grocery purchase and is excluded from the January business P&L."
+  },
+  {
+    "id": "netflix_personal_subscription",
+    "sources": [
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "credit_card_transactions.json": 15.49
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $15.49 Netflix charge is personal and is excluded from business expenses."
+  },
+  {
+    "id": "shell_personal_fuel",
+    "sources": [
+      "credit_card_transactions.json"
+    ],
+    "amounts_seen": {
+      "credit_card_transactions.json": 52.1
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $52.10 Shell charge is classified as personal fuel and is excluded from the January business P&L."
+  },
+  {
+    "id": "hartford_mutual_quote_vs_approval",
+    "sources": [
+      "quote_hartford_mutual_fleet.pdf",
+      "email_fleet_wellness.txt"
+    ],
+    "amounts_seen": {
+      "quote_hartford_mutual_fleet.pdf": 6593.7,
+      "email_fleet_wellness.txt": 6800.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The signed quote totals $6,593.70 including tax, while the email says the customer approved a rounded $6,800 budget. The work is scheduled for March and the email confirms no January revenue, so exclude both amounts from January."
+  },
+  {
+    "id": "mike_smith_unpaid_iou",
+    "sources": [
+      "iou_mike_smith.pdf",
+      "email_owner_voice_memo.txt"
+    ],
+    "amounts_seen": {
+      "iou_mike_smith.pdf": 180.0,
+      "email_owner_voice_memo.txt": 180.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $180 tune-up and brake-pad amount is an unpaid IOU. The owner confirms it has not reached the bank, so it is not January cash revenue."
+  },
+  {
+    "id": "hartford_mutual_future_work",
+    "sources": [
+      "email_fleet_wellness.txt"
+    ],
+    "amounts_seen": {
+      "email_fleet_wellness.txt": 6800.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The Hartford Mutual fleet work is targeted for March 9\u201320, with payment expected in February. The approved $6,800 is future work and not January revenue."
+  },
+  {
+    "id": "wedding_ebike_future_quote",
+    "sources": [
+      "email_wedding_ebikes.txt"
+    ],
+    "amounts_seen": {
+      "email_wedding_ebikes.txt": 5600.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $5,600 wedding e-bike estimate concerns a June event, has no deposit, and remains subject to a February decision. Exclude it from January revenue."
+  },
+  {
+    "id": "yale_cycling_club_future_work",
+    "sources": [
+      "email_yale_cycling_club.txt"
+    ],
+    "amounts_seen": {
+      "email_yale_cycling_club.txt": 2400.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "The $2,400 Yale Cycling Club estimate is for February work and no deposit was received in January. The possible $150 rush surcharge is not yet committed, so neither amount is January revenue."
+  },
+  {
+    "id": "cam_not_yet_invoiced",
+    "sources": [
+      "lease_jan2026.pdf"
+    ],
+    "amounts_seen": {
+      "lease_jan2026.pdf": 125.0
+    },
+    "included_in_income_statement": "no",
+    "amount_used_in_income_statment": 0.0,
+    "resolution": "Estimated January CAM is approximately $125, but the lease states it was not yet invoiced and will appear on a later statement. Do not accrue it as a January cash expense."
+  }
+]

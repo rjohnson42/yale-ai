@@ -1,0 +1,362 @@
+[
+  {
+    "query_image": "data/test_images/image_01_true.jpeg",
+    "product_found": true,
+    "product_id": "yale-dad-t-shirt",
+    "product_name": "Yale Dad T-Shirt",
+    "garment_type": "t-shirt",
+    "theme": "Dad",
+    "primary_color": "light gray",
+    "confidence": 0.7799,
+    "clip_similarity": 0.7799,
+    "matched_by": "text",
+    "readable_text": "\"YALE\" \"DAD\"",
+    "reason": "Clothing reads \u201c\"YALE\" \"DAD\"\u201d (t-shirt). That matches yale-dad-t-shirt, and the local vector search ranks it 1 (similarity 0.78). No further catalogue images were sent.",
+    "images_sent": 1,
+    "vision_model": "gpt-5.6-luna",
+    "shortlist": [
+      {
+        "product_id": "yale-dad-t-shirt",
+        "name": "Yale Dad T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Dad",
+        "primary_color": "light gray",
+        "similarity": 0.7799
+      },
+      {
+        "product_id": "yale-dad-crewneck",
+        "name": "Yale Dad Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Dad",
+        "primary_color": "light gray",
+        "similarity": 0.7695
+      },
+      {
+        "product_id": "dry-zone-long-sleeve",
+        "name": "Dry Zone Long Sleeve",
+        "garment_type": "long sleeve",
+        "theme": "Yale Bulldogs",
+        "primary_color": "navy",
+        "similarity": 0.7466
+      },
+      {
+        "product_id": "champion-full-zip-hood",
+        "name": "Champion Full Zip Hood",
+        "garment_type": "full-zip hoodie",
+        "theme": "Full-Zip Hoodie",
+        "primary_color": "charcoal",
+        "similarity": 0.7466
+      },
+      {
+        "product_id": "yale-dad-hoodie",
+        "name": "Yale Dad Hoodie",
+        "garment_type": "hoodie",
+        "theme": "Dad",
+        "primary_color": "navy",
+        "similarity": 0.7464
+      },
+      {
+        "product_id": "yale-brother-crewneck",
+        "name": "Yale Brother Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Brother",
+        "primary_color": "light gray",
+        "similarity": 0.7451
+      },
+      {
+        "product_id": "track-field-left-chest-t-shirt",
+        "name": "Track Field Left Chest T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Track and Field",
+        "primary_color": "navy",
+        "similarity": 0.7431
+      },
+      {
+        "product_id": "football-left-chest-t-shirt",
+        "name": "Football Left Chest T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Football",
+        "primary_color": "navy",
+        "similarity": 0.7373
+      },
+      {
+        "product_id": "yale-grandpa-crewneck",
+        "name": "Yale Grandpa Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Grandpa",
+        "primary_color": "light gray",
+        "similarity": 0.735
+      }
+    ]
+  },
+  {
+    "query_image": "data/test_images/image_02_false.jpeg",
+    "product_found": false,
+    "product_id": null,
+    "product_name": null,
+    "garment_type": null,
+    "theme": null,
+    "primary_color": null,
+    "confidence": 0.85,
+    "clip_similarity": 0.6207,
+    "matched_by": "none",
+    "readable_text": "ESSENTIALS",
+    "reason": "No Campus Customs wording on the clothing, and no Yale mark on the garment. Nearest catalogue neighbor is brooks-brothers-double-knit-full-zip-hoodie-yale at similarity 0.62.",
+    "images_sent": 1,
+    "vision_model": "gpt-5.6-luna",
+    "shortlist": [
+      {
+        "product_id": "brooks-brothers-double-knit-full-zip-hoodie-yale",
+        "name": "Brooks Brothers Double Knit Full Zip Hoodie Yale",
+        "garment_type": "full-zip hoodie",
+        "theme": "Double Knit",
+        "primary_color": "navy",
+        "similarity": 0.6207
+      },
+      {
+        "product_id": "divinity-school-fleece-sweater",
+        "name": "Divinity School Fleece Sweater",
+        "garment_type": "fleece sweater",
+        "theme": "Divinity School",
+        "primary_color": "navy",
+        "similarity": 0.6154
+      },
+      {
+        "product_id": "timothy-dwight-college-crewneck",
+        "name": "Timothy Dwight College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Timothy Dwight College",
+        "primary_color": "light gray",
+        "similarity": 0.6144
+      },
+      {
+        "product_id": "school-of-architecture-fleece-sweater",
+        "name": "School Of Architecture Fleece Sweater",
+        "garment_type": "fleece sweater",
+        "theme": "School of Architecture",
+        "primary_color": "navy",
+        "similarity": 0.6135
+      },
+      {
+        "product_id": "pierson-college-crewneck",
+        "name": "Pierson College Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Pierson College",
+        "primary_color": "navy",
+        "similarity": 0.5999
+      },
+      {
+        "product_id": "school-of-music-fleece-sweater",
+        "name": "School Of Music Fleece Sweater",
+        "garment_type": "fleece sweater",
+        "theme": "School of Music",
+        "primary_color": "navy",
+        "similarity": 0.599
+      },
+      {
+        "product_id": "benjamin-franklin-fleece-jacket",
+        "name": "Benjamin Franklin Fleece Jacket",
+        "garment_type": "fleece jacket",
+        "theme": "Benjamin Franklin College",
+        "primary_color": "light gray",
+        "similarity": 0.5984
+      },
+      {
+        "product_id": "school-of-architecture-crewneck",
+        "name": "School Of Architecture Crewneck",
+        "garment_type": "crewneck",
+        "theme": "School of Architecture",
+        "primary_color": "navy",
+        "similarity": 0.5963
+      },
+      {
+        "product_id": "ua-gameday-double-knit-hood",
+        "name": "UA Gameday Double Knit Hood",
+        "garment_type": "hoodie",
+        "theme": "Gameday",
+        "primary_color": "navy",
+        "similarity": 0.596
+      }
+    ]
+  },
+  {
+    "query_image": "data/test_images/image_03_true.jpeg",
+    "product_found": true,
+    "product_id": "dry-zone-long-sleeve",
+    "product_name": "Dry Zone Long Sleeve",
+    "garment_type": "long sleeve",
+    "theme": "Yale Bulldogs",
+    "primary_color": "navy",
+    "confidence": 0.99,
+    "clip_similarity": 0.5696,
+    "matched_by": "text",
+    "readable_text": "YALE; BULLDOGS",
+    "reason": "The worn garment is a navy long-sleeve shirt with the same white 'YALE BULLDOGS' graphic and compatible long-sleeve cut as the catalogue product.",
+    "images_sent": 2,
+    "vision_model": "gpt-5.6-luna",
+    "shortlist": [
+      {
+        "product_id": "champion-reverse-weave-hoodie-1",
+        "name": "Champion Reverse Weave Hoodie 1",
+        "garment_type": "hoodie",
+        "theme": "Reverse Weave",
+        "primary_color": "navy",
+        "similarity": 0.5979
+      },
+      {
+        "product_id": "champion-reverse-weave-crewneck",
+        "name": "Champion Reverse Weave Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Reverse Weave",
+        "primary_color": "light gray",
+        "similarity": 0.596
+      },
+      {
+        "product_id": "champion-mens-triumph-raglan-crew",
+        "name": "Champion Mens Triumph Raglan Crew",
+        "garment_type": "crewneck",
+        "theme": "Triumph",
+        "primary_color": "navy",
+        "similarity": 0.5836
+      },
+      {
+        "product_id": "champion-full-zip-hood",
+        "name": "Champion Full Zip Hood",
+        "garment_type": "full-zip hoodie",
+        "theme": "Full-Zip Hoodie",
+        "primary_color": "charcoal",
+        "similarity": 0.5787
+      },
+      {
+        "product_id": "basic-hoodie-big-yale",
+        "name": "Basic Hoodie Big Yale",
+        "garment_type": "hoodie",
+        "theme": "Big Yale",
+        "primary_color": "navy",
+        "similarity": 0.5761
+      },
+      {
+        "product_id": "t-felt-y-heavyweight",
+        "name": "T Felt Y Heavyweight",
+        "garment_type": "t-shirt",
+        "theme": "Heavyweight Y",
+        "primary_color": "ivory",
+        "similarity": 0.5752
+      },
+      {
+        "product_id": "divinity-school-fleece-sweater",
+        "name": "Divinity School Fleece Sweater",
+        "garment_type": "fleece sweater",
+        "theme": "Divinity School",
+        "primary_color": "navy",
+        "similarity": 0.5748
+      },
+      {
+        "product_id": "big-yale-tri-blend-t-shirt",
+        "name": "Big Yale Tri Blend T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Big Yale",
+        "primary_color": "pink",
+        "similarity": 0.573
+      },
+      {
+        "product_id": "the-forest-school-hoodie",
+        "name": "The Forest School Hoodie",
+        "garment_type": "hoodie",
+        "theme": "The Forest School",
+        "primary_color": "charcoal",
+        "similarity": 0.5729
+      }
+    ]
+  },
+  {
+    "query_image": "data/test_images/image_04_false.jpeg",
+    "product_found": false,
+    "product_id": null,
+    "product_name": null,
+    "garment_type": null,
+    "theme": null,
+    "primary_color": null,
+    "confidence": 0.85,
+    "clip_similarity": 0.5348,
+    "matched_by": "none",
+    "readable_text": "Balenciaga",
+    "reason": "No Campus Customs wording on the clothing, and no Yale mark on the garment. Nearest catalogue neighbor is school-of-management-crest-t-shirt at similarity 0.53.",
+    "images_sent": 1,
+    "vision_model": "gpt-5.6-luna",
+    "shortlist": [
+      {
+        "product_id": "school-of-management-crest-t-shirt",
+        "name": "School Of Management Crest T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "School of Management",
+        "primary_color": "navy",
+        "similarity": 0.5348
+      },
+      {
+        "product_id": "champion-full-zip-hood",
+        "name": "Champion Full Zip Hood",
+        "garment_type": "full-zip hoodie",
+        "theme": "Full-Zip Hoodie",
+        "primary_color": "charcoal",
+        "similarity": 0.5149
+      },
+      {
+        "product_id": "champion-mens-triumph-raglan-crew",
+        "name": "Champion Mens Triumph Raglan Crew",
+        "garment_type": "crewneck",
+        "theme": "Triumph",
+        "primary_color": "navy",
+        "similarity": 0.513
+      },
+      {
+        "product_id": "champion-reverse-weave-crewneck",
+        "name": "Champion Reverse Weave Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Reverse Weave",
+        "primary_color": "light gray",
+        "similarity": 0.5108
+      },
+      {
+        "product_id": "track-field-left-chest-t-shirt",
+        "name": "Track Field Left Chest T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Track and Field",
+        "primary_color": "navy",
+        "similarity": 0.5098
+      },
+      {
+        "product_id": "super-heavyweight-crewneck-arched-yale-crest",
+        "name": "Super Heavyweight Crewneck Arched Yale Crest",
+        "garment_type": "crewneck",
+        "theme": "Arched Yale Crest",
+        "primary_color": "light gray",
+        "similarity": 0.5046
+      },
+      {
+        "product_id": "big-yale-tri-blend-t-shirt",
+        "name": "Big Yale Tri Blend T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Big Yale",
+        "primary_color": "pink",
+        "similarity": 0.502
+      },
+      {
+        "product_id": "football-left-chest-t-shirt",
+        "name": "Football Left Chest T-Shirt",
+        "garment_type": "t-shirt",
+        "theme": "Football",
+        "primary_color": "navy",
+        "similarity": 0.5019
+      },
+      {
+        "product_id": "hype-and-vice-yale-university-premium-crewneck",
+        "name": "Hype And Vice Yale University Premium Crewneck",
+        "garment_type": "crewneck",
+        "theme": "Premium",
+        "primary_color": "white",
+        "similarity": 0.4975
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "Parent of a Yale College student",
+  "segment": "parent",
+  "summary": "A parent of a Yale College undergraduate. They are not on campus most of the year. They shop when they visit, at the holidays, and around graduation. They want something that says their child goes to Yale, often a shirt for themselves and a gift for the student.",
+  "relationship_to_yale": "Parent of a current Yale College student. Visits for weekends, games, and ceremonies rather than living there.",
+  "who_they_buy_for": ["self", "their student"],
+  "occasions": ["parents weekend", "move-in", "holidays", "Harvard weekend", "graduation"],
+  "preferred_collections": ["family", "campus", "brand"],
+  "preferred_themes": [
+    "Mom",
+    "Dad",
+    "family pride",
+    "a clear Yale mark they can wear while visiting",
+    "a nicer gift for their student"
+  ],
+  "avoid_themes": [
+    "a residential college that is not their child's",
+    "inside jokes that only current students get",
+    "gear that assumes the viewer lives in the college"
+  ],
+  "preferred_garments": ["hoodie", "crewneck", "t-shirt", "quarter-zip"],
+  "price_sensitivity": "medium",
+  "tone_that_resonates": ["warm", "proud", "welcoming to visitors", "clear about Yale"],
+  "tone_that_misses": ["cynical", "party scene", "aimed only at students who already live there"]
+}

@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-09-16",
+  "note": "Drafts only. Never sent.",
+  "emails": [
+    {
+      "company_name": "HCA Healthcare",
+      "to_emails": [],
+      "subject": "Extending HCA’s patient-access automation across complex journeys",
+      "body": "Hi HCA Healthcare team,\n\nI was impressed by the scale of HCA’s technology operation: 190 hospitals, approximately 2,500 ambulatory sites, and 47 million patient encounters, alongside an Automation Center of Excellence and work on patient-information automation, call/text analysis, and automated registration.\n\nSierra helps enterprise healthcare organizations deploy governed conversational agents that can move beyond isolated FAQs—coordinating multi-step patient-access journeys across chat, voice, SMS, email, and existing systems. For HCA, that could mean helping patients schedule or reschedule care, resolve registration and billing questions, complete forms, and receive proactive follow-up while preserving context and routing appropriately to staff.\n\nWould a short conversation with the patient-access, care-transformation, or ITG team be useful? We could discuss one narrowly scoped workflow and the outcome metrics HCA would want to validate.\n\nBest,\n[Your Name]\nSierra\nhttps://sierra.ai",
+      "sent": false
+    },
+    {
+      "company_name": "Providence",
+      "to_emails": [],
+      "subject": "Building on Grace for more complete patient journeys",
+      "body": "Hi Providence Digital Innovation Group,\n\nI read your description of Grace in the Providence app and was struck by how much practical work it already supports—appointment scheduling, care navigation, results and records questions, billing, financial-assistance eligibility, symptom guidance, and connections to live financial counselors.\n\nSierra helps teams extend successful patient-navigation experiences into governed, long-horizon agents that can retain context, take action across business systems, and coordinate proactive and reactive conversations across channels. That could be useful for journeys such as referral-to-appointment, prescription follow-up, financial-assistance completion, or escalation from self-service to the patient engagement center.\n\nGiven Providence’s collaboration among digital, engineering, operations, caregivers, and patient-engagement teams, would you be open to comparing notes on where Grace’s next highest-value workflow might be—and how to measure resolution, access, and patient satisfaction?\n\nBest,\n[Your Name]\nSierra\nhttps://sierra.ai",
+      "sent": false
+    },
+    {
+      "company_name": "NYU Langone Health",
+      "to_emails": [
+        "news@nyulangone.org"
+      ],
+      "subject": "A governed next layer for NYU Langone’s AI Assistant",
+      "body": "Hello NYU Langone team,\n\nI noticed NYU Langone’s public AI Assistant alongside MyChart, virtual urgent care, Care on Demand, video visits, and a broad network of hospitals and specialty services. That combination suggests an advanced digital-access program with many opportunities to connect patients to the right next step.\n\nSierra helps healthcare organizations build and operate production conversational agents with no-code journey management, automated simulation and edge-case testing, persistent context, system actions, observability, and human-review guardrails. We would be interested in exploring whether Sierra could complement NYU Langone’s existing assistant for a focused workflow such as provider discovery, appointment scheduling, pre-visit preparation, or follow-up across digital and contact-center channels.\n\nCould you point me to the leader responsible for digital health, patient access, or enterprise conversational AI? I’m happy to send a concise workflow proposal rather than a generic product deck.\n\nBest,\n[Your Name]\nSierra\nhttps://sierra.ai\n\nP.S. I found this public address on NYU Langone’s contact page; if it is not the right route for a technology partnership, please redirect me to the appropriate team.",
+      "sent": false
+    }
+  ]
+}

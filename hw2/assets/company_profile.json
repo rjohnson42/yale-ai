@@ -1,0 +1,311 @@
+{
+  "company_name": "Sierra",
+  "company_url": "https://sierra.ai",
+  "tagline_or_one_liner": "Sierra helps businesses build better, more human customer experiences with AI; it describes itself as a conversational AI platform for businesses.",
+  "source_urls_crawled": [
+    "https://sierra.ai/",
+    "https://sierra.ai/about",
+    "https://sierra.ai/product/ghostwriter",
+    "https://sierra.ai/product/insights",
+    "https://sierra.ai/product/horizon",
+    "https://sierra.ai/customers"
+  ],
+  "crawl_errors": [],
+  "industries": [
+    "Financial services",
+    "Healthcare",
+    "Telecommunications",
+    "Media",
+    "Travel and hospitality",
+    "Retail and consumer goods",
+    "Technology",
+    "Commercial real estate"
+  ],
+  "business_model": "B2B enterprise software/platform. Sierra sells conversational AI agents and related agent-building, orchestration, analytics, and governance capabilities to businesses. The site states that its pricing is outcome-based: customers pay for value/results delivered rather than tokens.",
+  "products_and_services": [
+    {
+      "name": "Sierra conversational AI platform",
+      "description": "A platform for businesses to deploy AI agents that handle customer experiences and pursue business outcomes.",
+      "value_proposition": "Unifies customer interactions and outcomes across channels, with built-in trust, security, compliance, and guardrails.",
+      "source_url": "https://sierra.ai/"
+    },
+    {
+      "name": "Ghostwriter",
+      "description": "An agent-building agent that creates and optimizes production-ready customer-experience agents from prompts, SOPs, transcripts, audio interviews, or other business materials.",
+      "value_proposition": "Lets customer-experience teams build, test, review, and continuously improve multilingual, multichannel agents without clicks, code, or complex manual debugging.",
+      "source_url": "https://sierra.ai/product/ghostwriter"
+    },
+    {
+      "name": "Agent Studio",
+      "description": "A no-code environment for building and managing agents, configuring customer journeys and knowledge, defining brand guidelines, and running simulations.",
+      "value_proposition": "Empowers customer-experience teams to manage agents without writing code.",
+      "source_url": "https://sierra.ai/product/ghostwriter"
+    },
+    {
+      "name": "Horizon",
+      "description": "Long-horizon agents that act on signals, retain customer context, plan next steps, and orchestrate inbound and outbound interactions over days, weeks, or months.",
+      "value_proposition": "Drives high-value outcomes through proactive, omnichannel engagement, persistent memory, next-best-action decisioning, and playbooks.",
+      "source_url": "https://sierra.ai/product/horizon"
+    },
+    {
+      "name": "Insights",
+      "description": "Analytics, experimentation, monitoring, auditing, and observability for evaluating and optimizing agent performance.",
+      "value_proposition": "Helps businesses track metrics such as CSAT and resolution, investigate trends, identify conversations needing attention, run experiments, and understand agent actions.",
+      "source_url": "https://sierra.ai/product/insights"
+    },
+    {
+      "name": "Explorer",
+      "description": "Natural-language analytics and conversation research that answers questions about customer conversations and recommends improvements.",
+      "value_proposition": "Provides ChatGPT-style analysis and actionable recommendations from agent and customer-interaction data.",
+      "source_url": "https://sierra.ai/product/insights"
+    },
+    {
+      "name": "Multichannel agent deployment",
+      "description": "A single agent can operate across chat, SMS, WhatsApp, email, voice, and ChatGPT.",
+      "value_proposition": "Unifies channels and preserves context as customers switch between them.",
+      "source_url": "https://sierra.ai/"
+    },
+    {
+      "name": "Context Engine",
+      "description": "Customer-context and memory capabilities used to connect conversations, systems, and touchpoints.",
+      "value_proposition": "Enables personalized decisions and continuity across customer journeys.",
+      "source_url": "https://sierra.ai/product/horizon"
+    }
+  ],
+  "who_they_sell_to": [
+    "Large and leading consumer-facing businesses",
+    "Customer experience and customer support organizations",
+    "Contact centers and support teams",
+    "Financial-services companies",
+    "Healthcare providers and healthcare organizations",
+    "Telecommunications companies",
+    "Media and subscription businesses",
+    "Travel and hospitality companies",
+    "Retail and consumer-goods companies",
+    "Technology companies",
+    "Commercial real-estate businesses"
+  ],
+  "geography": {
+    "headquarters": "Not explicitly identified on the crawled pages; the company says it is based in New York and names San Francisco as where it began.",
+    "offices": [
+      "New York",
+      "Atlanta",
+      "London",
+      "Singapore",
+      "Tokyo",
+      "Paris",
+      "Madrid",
+      "Toronto",
+      "San Francisco"
+    ],
+    "markets_served": [
+      "United States",
+      "United Kingdom",
+      "Singapore",
+      "Japan",
+      "France",
+      "Spain",
+      "Canada",
+      "Global/multilingual markets"
+    ]
+  },
+  "founded": "Not found on crawled pages.",
+  "scale_claims": [
+    {
+      "claim": "The customer page says Sierra is trusted by industry leaders with millions of customers.",
+      "source_url": "https://sierra.ai/customers"
+    },
+    {
+      "claim": "The customer directory shows 50 customer stories/results entries.",
+      "source_url": "https://sierra.ai/customers"
+    },
+    {
+      "claim": "Sierra says it has offices in New York, Atlanta, London, Singapore, Tokyo, Paris, Madrid, Toronto, and San Francisco.",
+      "source_url": "https://sierra.ai/about"
+    },
+    {
+      "claim": "Sierra says its agents can operate in multiple languages and across chat, SMS, WhatsApp, email, voice, and ChatGPT.",
+      "source_url": "https://sierra.ai/"
+    }
+  ],
+  "public_or_private": "Not found on crawled pages; appears to be a private company based on the site's presentation, but this is not explicitly stated in the reviewed sources.",
+  "regulated_or_brand_sensitive": {
+    "signals": [
+      "Healthcare workflows involving patients, providers, payers, EHRs, prior authorization, scheduling, and clinical notes",
+      "Financial-services and banking customer experiences",
+      "Trust, security, and compliance are emphasized as core product attributes",
+      "Brand-sensitive customer interactions, including personal moments, hospitality, membership, and customer loyalty",
+      "Consent-aware delivery, opt-outs, suppression rules, goals, guardrails, auditing, and human sign-off are described for Horizon"
+    ],
+    "source_urls": [
+      "https://sierra.ai/",
+      "https://sierra.ai/product/horizon",
+      "https://sierra.ai/product/insights",
+      "https://sierra.ai/about"
+    ]
+  },
+  "customer_channels": [
+    "Chat",
+    "SMS",
+    "WhatsApp",
+    "Email",
+    "Voice/phone",
+    "ChatGPT",
+    "Provider messaging/workflow integrations"
+  ],
+  "support_or_contact_center_evidence": [
+    {
+      "evidence": "Sierra positions its platform around customer service, customer experience, support teams, contact centers, and customer interactions; customer stories include transforming support and inbound sales calls.",
+      "source_url": "https://sierra.ai/"
+    },
+    {
+      "evidence": "Ghostwriter is designed for customer-experience teams to build, test, and improve agents and support workflows.",
+      "source_url": "https://sierra.ai/product/ghostwriter"
+    },
+    {
+      "evidence": "Customer examples cite support-team augmentation, 24/7 availability, multilingual engagement, and contact-centre operations.",
+      "source_url": "https://sierra.ai/about"
+    },
+    {
+      "evidence": "Customer stories include support, inbound sales calls, banking support, patient service, and utility customer service.",
+      "source_url": "https://sierra.ai/customers"
+    }
+  ],
+  "helpdesk_or_crm_mentions": [
+    "Systems integrations are mentioned for Ghostwriter, but specific CRM/helpdesk products were not named on the crawled pages.",
+    "Horizon references EHRs, scheduling APIs, payer phone workflows, provider messaging, and calendar/scheduling systems.",
+    "The site describes integration with existing tools for alerts."
+  ],
+  "existing_ai_or_chatbot_mentions": [
+    {
+      "evidence": "The homepage presents Sierra Agent and calls Sierra the leading conversational AI platform for businesses.",
+      "source_url": "https://sierra.ai/"
+    },
+    {
+      "evidence": "Ghostwriter creates and optimizes AI agents, including automated simulations, edge-case testing, and fixes.",
+      "source_url": "https://sierra.ai/product/ghostwriter"
+    },
+    {
+      "evidence": "Horizon provides long-horizon AI agents for proactive and reactive customer engagement.",
+      "source_url": "https://sierra.ai/product/horizon"
+    }
+  ],
+  "complex_journeys": [
+    "Long-running customer journeys over days, weeks, or months",
+    "Healthcare referral-to-appointment scheduling, prior-authorization resolution, payer follow-up, provider messaging, and intake-form completion",
+    "Mortgage, claims, renewals, cancellations, and other outcome-oriented playbooks",
+    "Cross-channel conversations with persistent memory and context",
+    "Proactive engagement triggered by customer behavior, conversations, or milestones",
+    "Agent-building, simulation, approval, deployment, monitoring, experimentation, and continuous optimization"
+  ],
+  "systems_of_record_mentions": [
+    "EHR",
+    "Customer profile and complete customer history",
+    "Scheduling APIs and calendars",
+    "Payer and provider workflows",
+    "Knowledge sources",
+    "Systems accessed by agents",
+    "Existing business systems and integrations"
+  ],
+  "availability_and_language": {
+    "hours_or_24_7": "Sierra customer examples state that its AI agent can provide 24/7 availability; no corporate support hours were found.",
+    "languages": [
+      "English",
+      "Spanish",
+      "French",
+      "German",
+      "Japanese",
+      "Korean",
+      "Multilingual agents are supported; additional languages may be available"
+    ],
+    "source_urls": [
+      "https://sierra.ai/",
+      "https://sierra.ai/about"
+    ]
+  },
+  "seasonality_or_peak_load_signals": [
+    "The platform is marketed to high-volume businesses with millions of customers.",
+    "Customer stories reference media subscriptions, travel and hospitality, retail, financial services, healthcare, and other industries with potentially variable demand.",
+    "Proactive and omnichannel engagement is positioned for scaling customer experience."
+  ],
+  "leadership_or_executives_named": [
+    {
+      "name": "Bret Taylor",
+      "title": "Co-Founder",
+      "source_url": "https://sierra.ai/about"
+    },
+    {
+      "name": "Clay Bavor",
+      "title": "Co-Founder",
+      "source_url": "https://sierra.ai/about"
+    }
+  ],
+  "buyer_persona_clues": [
+    "Chief executive officers and executive leadership",
+    "Chief technology officers",
+    "Chief marketing officers and heads of ecommerce",
+    "Chief operating officers",
+    "Chief medical officers",
+    "VPs of product, digital product, member experience, customer insights, and AI/digital products",
+    "Heads of contact-centre operations",
+    "Customer-experience leaders",
+    "Support and operations teams",
+    "Engineering and technical teams, when needed for integrations"
+  ],
+  "careers_or_hiring_signals": [
+    {
+      "signal": "The site includes a Careers link, but careers content was not crawled due to the page limit.",
+      "source_url": "https://sierra.ai/"
+    }
+  ],
+  "icp_evidence": [
+    {
+      "icp_criterion": "Enterprise or scaled consumer-facing organization",
+      "site_evidence": "Sierra says it works with industry leaders and customers with millions of customers; its customer directory includes major brands such as Rocket Mortgage, SiriusXM, Redfin, Ramp, and others.",
+      "source_url": "https://sierra.ai/customers"
+    },
+    {
+      "icp_criterion": "Meaningful customer-service or customer-experience operation",
+      "site_evidence": "The company explicitly targets customer-experience teams, support teams, contact centers, and customer-service journeys.",
+      "source_url": "https://sierra.ai/product/ghostwriter"
+    },
+    {
+      "icp_criterion": "Complex, high-value workflows where outcomes matter",
+      "site_evidence": "Horizon describes mortgage, claims, renewal, healthcare referral, scheduling, prior authorization, and other long-horizon playbooks.",
+      "source_url": "https://sierra.ai/product/horizon"
+    },
+    {
+      "icp_criterion": "Need for omnichannel and multilingual engagement",
+      "site_evidence": "Sierra supports chat, SMS, WhatsApp, email, voice, and ChatGPT; the about page cites 24/7 and any-language customer engagement.",
+      "source_url": "https://sierra.ai/"
+    }
+  ],
+  "possible_disqualifiers_from_site": [
+    {
+      "disqualifier": "Organizations without substantial customer-experience volume or complex workflows may not fit the enterprise outcome-oriented platform.",
+      "site_evidence": "Sierra emphasizes leading brands, millions of customers, measurable business impact at scale, and outcomes-based pricing.",
+      "source_url": "https://sierra.ai/about"
+    },
+    {
+      "disqualifier": "Highly regulated or brand-sensitive deployments may require extensive security, compliance, guardrails, auditability, and human sign-off review.",
+      "site_evidence": "The site emphasizes trust, security, compliance, goals, guardrails, auditing, consent, suppression, and human sign-off.",
+      "source_url": "https://sierra.ai/product/horizon"
+    },
+    {
+      "disqualifier": "Organizations seeking a simple FAQ chatbot rather than broader agent orchestration and customer-outcome automation may be a poor fit.",
+      "site_evidence": "Sierra positions its agents around multi-step outcomes, proactive engagement, long-horizon planning, system actions, and continuous optimization.",
+      "source_url": "https://sierra.ai/product/horizon"
+    }
+  ],
+  "fields_not_found": [
+    "Explicit founding year/date",
+    "Explicit public/private status",
+    "Explicit headquarters designation",
+    "Specific CRM/helpdesk vendor names",
+    "Corporate support contact details and support hours",
+    "Pricing figures",
+    "Employee count",
+    "Revenue/funding details"
+  ],
+  "profiled_at": "2026-09-15"
+}

@@ -1,0 +1,49 @@
+{
+  "seller_name": "Sierra",
+  "seller_url": "https://sierra.ai",
+  "created_at": "2026-09-16",
+  "targets": [
+    {
+      "company_name": "HCA Healthcare",
+      "company_url": "https://www.hcahealthcare.com",
+      "contact_emails": [],
+      "mutual_fit_reason": "HCA is an exceptionally strong enterprise fit for Sierra: it operates 190 hospitals and approximately 2,500 ambulatory sites, supports 47 million patient encounters annually, and already has an Automation Center of Excellence plus patient-experience and workflow-transformation programs. Sierra could complement—not replace—HCA's internal automation by orchestrating complex patient-access, scheduling, registration, billing, and follow-up journeys across channels with stronger conversational context, guardrails, auditability, and measurable outcomes.",
+      "business_context": "HCA's Information Technology Group serves a large, distributed care network and explicitly discusses automation, patient-information automation, call/text analysis, automated emergency-room registration, EHR modernization, and care transformation. This suggests sophisticated technical and operational buyers, as well as complex regulated workflows where Sierra's trust and governance positioning matters.",
+      "source_urls": [
+        "https://www.hcahealthcare.com/about/our-technology",
+        "https://www.hcahealthcare.com/contact-us",
+        "https://sierra.ai/product/horizon",
+        "https://sierra.ai/product/insights"
+      ]
+    },
+    {
+      "company_name": "Providence",
+      "company_url": "https://www.providence.org",
+      "contact_emails": [],
+      "mutual_fit_reason": "Providence has a direct use case for Sierra because it operates a large, multi-region health system and already uses an AI-powered patient-navigation chatbot, Grace. Sierra may be relevant for expanding beyond app-based navigation into more complex, persistent journeys such as appointment access, financial-assistance qualification, prescription workflows, provider messaging, and coordinated live-agent escalation across voice, chat, SMS, and email.",
+      "business_context": "Providence publicly describes Grace helping patients schedule appointments, find results, navigate records, pay bills, assess financial-assistance eligibility, and choose care based on symptoms. The Digital Innovation Group worked with engineers, product leaders, caregivers, operations, patient engagement, and patients—clear evidence of an active innovation organization and a cross-functional buyer group.",
+      "source_urls": [
+        "https://blog.providence.org/blog/digital-in-action-improving-patient-navigation-with-grace",
+        "https://www.providence.org",
+        "https://sierra.ai/product/ghostwriter",
+        "https://sierra.ai/product/horizon"
+      ]
+    },
+    {
+      "company_name": "NYU Langone Health",
+      "company_url": "https://nyulangone.org",
+      "contact_emails": [
+        "news@nyulangone.org"
+      ],
+      "mutual_fit_reason": "NYU Langone is a strong fit because it already exposes an AI assistant and serves patients across a broad specialty, hospital, urgent-care, virtual-care, and geographic footprint. That existing AI maturity can make it a credible design partner for Sierra's next layer: production agent governance, simulation, observability, cross-channel continuity, and outcome-oriented patient-access journeys.",
+      "business_context": "NYU's public site highlights an AI Assistant, MyChart, patient forms, virtual urgent care, Care on Demand, video visits, many hospitals and locations, and a central contact/access experience. The public contact page lists news@nyulangone.org, which is a media address rather than a verified commercial buyer contact; outreach should be routed to digital health, patient access, or enterprise technology leadership if possible.",
+      "source_urls": [
+        "https://nyulangone.org/ai-assistant",
+        "https://nyulangone.org/contact-us",
+        "https://nyulangone.org",
+        "https://sierra.ai/product/ghostwriter",
+        "https://sierra.ai/product/insights"
+      ]
+    }
+  ]
+}
