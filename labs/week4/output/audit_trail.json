@@ -1,0 +1,97 @@
+[
+  {
+    "time": "2026-10-10T12:27:19.116149-04:00",
+    "user_message": "Who teaches MGT 409?",
+    "thoughts": "No separate thinking text was returned.",
+    "tool_calls": [],
+    "stop_reason": "ModelHTTPError: status_code: 401, model_name: gpt-5.6-luna, body: {'message': 'Portkey Error: Invalid API Key. Error Code: 03', 'code': '03'}",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:29:48.608474-04:00",
+    "user_message": "Who teaches MGT 409?",
+    "thoughts": "No separate thinking text was returned.",
+    "tool_calls": [],
+    "stop_reason": "ModelHTTPError: status_code: 401, model_name: gpt-5.6-luna, body: {'message': 'Portkey Error: Invalid API Key. Error Code: 03', 'code': '03'}",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:30:41.073092-04:00",
+    "user_message": "Who teaches MGT 409?",
+    "thoughts": "MGT 409, **AI Foundations for Managers**, is taught by **Tauhid Zaman**.",
+    "tool_calls": [
+      {
+        "tool_name": "search_courses",
+        "args": {
+          "number": "MGT 409"
+        },
+        "short_result": "total_matches=6 returned=6 query=number=MGT 409"
+      }
+    ],
+    "stop_reason": "stop",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:31:41.978846-04:00",
+    "user_message": "what courses on PE does SOM offer",
+    "thoughts": "Yale SOM offers **two courses specifically titled Private Equity**: - **MGT 843 \u2014 Private Equity: The Deal** **Instructor:** Song Ma, co-taught with James Soldano **Meets:** Monday, 4:10\u20137:10 p.m. **Session:** Fall 2 Focuses on evaluating a live private-equity investment opportunity. - **MGT 847 \u2014 Private Equity: Leveraged Buyouts** **Instructor:** Joshua Cascade **Meets:** Wednesday, 4:10\u20137:10 p.m. **Session:** Fall 2 Covers LBO investing, due diligence, forecasting, LBO modeling, debt structures, and value creation. The catalog also lists **18 courses** matching a broader \u201cprivate equity\u201d search, including offerings in the **Entrepreneurship & Private Equity** category.",
+    "tool_calls": [
+      {
+        "tool_name": "search_courses",
+        "args": {
+          "query": "private equity"
+        },
+        "short_result": "total_matches=18 returned=15 query=query=private equity"
+      },
+      {
+        "tool_name": "search_courses",
+        "args": {
+          "title": "Private Equity"
+        },
+        "short_result": "total_matches=2 returned=2 query=title=Private Equity"
+      }
+    ],
+    "stop_reason": "stop",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:37:16.644033-04:00",
+    "user_message": "Who teaches MGT 409?",
+    "thoughts": "MGT 409, **AI Foundations for Managers**, is taught by **Tauhid Zaman**.",
+    "tool_calls": [
+      {
+        "tool_name": "search_courses",
+        "args": {
+          "number": "MGT 409"
+        },
+        "short_result": "total_matches=6 returned=6 query=number=MGT 409"
+      }
+    ],
+    "stop_reason": "stop",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:44:08.497618-04:00",
+    "user_message": "Who teaches MGT 409?",
+    "thoughts": "MGT 409, **AI Foundations for Managers**, is taught by **Tauhid Zaman**.",
+    "tool_calls": [
+      {
+        "tool_name": "search_courses",
+        "args": {
+          "number": "MGT 409"
+        },
+        "short_result": "total_matches=6 returned=6 query=number=MGT 409"
+      }
+    ],
+    "stop_reason": "stop",
+    "model": "gpt-5.6-luna"
+  },
+  {
+    "time": "2026-10-10T12:46:16.750838-04:00",
+    "user_message": "yo yo yo",
+    "thoughts": "Yo yo yo! How can I help with the Yale SOM course catalog?",
+    "tool_calls": [],
+    "stop_reason": "stop",
+    "model": "gpt-5.6-luna"
+  }
+]
