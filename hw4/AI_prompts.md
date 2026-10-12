@@ -136,3 +136,7 @@ Problem 13 - please make sure our repo is published like this. If you have to mo
 ## Problem 13, Prompt 2
 
 gitignore should include the whole data folder
+
+## Problem 13, Prompt 3
+
+do we need to update the README to instruct the grader how to connect the data folder when they pull this down?
