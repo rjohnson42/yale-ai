@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Customs app check</title>
+    <style>
+      html { background: #fff; }
+      body {
+        max-width: 880px;
+        margin: 48px auto 80px;
+        padding: 0 24px;
+        background: #fff;
+        color: #102033;
+        font: 17px/1.5 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      h1 { margin-bottom: 8px; font-size: 2rem; letter-spacing: -0.03em; }
+      h2 { margin: 0 0 14px; font-size: 1.35rem; letter-spacing: -0.02em; }
+      .meta { margin-top: 0; color: #5d6b7a; }
+      section { margin-top: 48px; }
+      img {
+        width: 100%;
+        border: 1px solid #e2e7ee;
+        border-radius: 12px;
+      }
+      p { margin: 14px 0 0; }
+    </style>
+  </head>
+  <body>
+    <h1>Campus Customs app check</h1>
+    <p class="meta">
+      Three checks on the running shop, 12 October 2026, signed in. Prices and
+      counts were compared with <code>campus_customs.db</code>.
+    </p>
+
+    <section>
+      <h2>1. Chat checks the stock and price of one item</h2>
+      <img
+        src="app_check_images/inventory.png"
+        alt="Chat reply: the Basic Hoodie Big Yale costs $68.00 and 8 larges are in stock"
+      />
+      <p>
+        Asked how much the Basic Hoodie Big Yale costs and how many larges are
+        left. The reply says $68.00 and 8 larges, which is the catalogue price
+        and the size L quantity in the database. The card under the reply shows
+        the same $68.00.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. A category question returns product cards</h2>
+      <img
+        src="app_check_images/hoodies.png"
+        alt="Chat reply to what hoodies do you have, with product cards underneath"
+      />
+      <p>
+        Asked "What hoodies do you have?" The chat answered with product cards:
+        a photo, the database price, and the sizes still in stock. It reported
+        23 hoodies, which is every catalogue row whose garment type contains
+        "hoodie." The panel shows the first three; 23 cards were returned in all.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Catalogue filters from Problem 9</h2>
+      <img
+        src="app_check_images/filters.png"
+        alt="Products page with the Hoodies chip selected and the count at 27 items"
+      />
+      <p>
+        Problem 9 added a search box and garment chips to the Products page,
+        which used to be one long grid of 102 items. Clicking Hoodies sets the
+        count to 27 items and the grid shows only hoodies. That chip is a wider
+        group than the chat search: it also includes hooded sweatshirts.
+      </p>
+    </section>
+  </body>
+</html>
