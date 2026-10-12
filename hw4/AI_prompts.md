@@ -132,3 +132,7 @@ Fnally, finish output/harness.md so it is clear how the system works. This is in
 ## Problem 13, Prompt 1
 
 Problem 13 - please make sure our repo is published like this. If you have to move anything around, re-test the app please
+
+## Problem 13, Prompt 2
+
+gitignore should include the whole data folder
